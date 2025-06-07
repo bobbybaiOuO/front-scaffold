@@ -1,6 +1,7 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 
 // const User = () => import("../views/User.vue");
+const Login = () => import("../view/Login.vue");
 
 // 路由嵌套
 // 创建一个路由对象，并且包含子路由
@@ -10,6 +11,11 @@ const listRoutes = {
 // 定义路由映射
 const routes = [
     listRoutes,
+    {
+        path: "/login", // 根路径
+        // name: "login", // 路由名称
+        component: Login, // 组件
+    }
 ];
 
 
